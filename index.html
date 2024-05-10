@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    
+  </head>
+  <body class="text-white font-['Poppins'] bg-sr-color">    
+    <nav class="px-8 py-6 w-full flex justify-between fixed z-50 backdrop-blur-lg bg-sr-color">
+        <div class="font-semibold text-xl">
+          <span class="pr-color">Rizal</span>Desain
+        </div>
+        <!-- layar komputer -->      
+          <button
+            class="block md:hidden text-dark focus:outline-none"
+            id="mobile-menu-button"
+          >
+            <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 5h18v1H3V5zm0 7h18v1H3v-1zm0 7h18v1H3v-1z"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden md:flex md:items-center space-x-8">
+            <a href="#hero" class="relative before:content-[''] before:w-full before:h-[2px] before:bg-[#7456ff] before:absolute before:-bottom-1 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-50">Home</a>
+            <a href="#why" class="relative before:content-[''] before:w-full before:h-[2px] before:bg-[#7456ff] before:absolute before:-bottom-1 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-50">About</a>
+            <a href="#projects" class="relative before:content-[''] before:w-full before:h-[2px] before:bg-[#7456ff] before:absolute before:-bottom-1 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-50">Project</a>
+            <a href="#" class="relative before:content-[''] before:w-full before:h-[2px] before:bg-[#7456ff] before:absolute before:-bottom-1 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-50">Blog</a>
+            <a class="outline outline-1 px-4 py-3 rounded pr-color hover:cursor-pointer hover:bg-white-500 hover:text-white cursor-pointer transition-all duration-300 ease-in-out" href="#footer"
+              >Contact Me</a
+            >
+          </div>
+  
+          <!-- layar HP -->
+          <div
+          class="pt-8 md:hidden bg-[#C5B9FF] w-[50%] h-[100vh] absolute top-0 -right-96 px-8 border-2 shadow-2xl transition-all duration-500 ease-in-out"
+          id="mobile-menu"
+        >
+          <div class="flex justify-between items-center">
+            <h2 class="font-bold text-xl pr-color">R <span class="text-black">D</span></h2>
+            <button class="relative hover:cursor-pointer" id="menu-button-x">
+              <div
+                class="w-6 h-[2px] bg-black rotate-45 absolute top-0 right-0"
+              ></div>
+              <div
+                class="w-6 h-[2px] bg-black -rotate-45 absolute top-0 right-0"
+              ></div>
+            </button>
+          </div>
+          <div class="pt-5 pb-4 space-y-6">
+            <div>
+              <a
+                href="#hero"
+                class="pr-color relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-[#F0F0F0] before:-bottom-2 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-100"
+                >Home</a
+              >
+            </div>
+            <div>
+              <a
+                href="#why"
+                class="pr-color relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-[#F0F0F0] before:-bottom-2 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-100"
+                >About</a
+              >
+            </div>
+            <div>
+              <a
+                href="#projects"
+                class="pr-color relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-[#F0F0F0] before:-bottom-2 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-100"
+                >Project</a
+              >
+            </div>
+            <div>
+              <a
+                href="#contact"
+                class="pr-color relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-[#F0F0F0] before:-bottom-2 before:transform before:origin-center before:scale-x-0 before:transition before:duration-500 before:ease-in-out hover:before:scale-x-100"
+                >Blog</a
+              >
+            </div>
+            <div>
+              <a href="#footer" class="block">
+                <button
+                  class="px-4 py-3 outline outline-1 pr-color rounded hover:cursor-pointer hover:bg-white-500 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+                >
+                  Contact Me
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>    
+    <!-- end nav -->
+    <section id="hero" class="pt-32 pb-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center px-8 gap-y-4 md:gap-x-8 md:gap-y-0"
+      >
+        <div class="w-full md:w-6/12 space-y-4">
+          <h2 class="text-4xl font-medium">Hello, Everyone</h2>
+          <h1 class="text-[52px] font-semibold">
+            I'm <span class="pr-color">Muhammad Rizal</span>
+          </h1>
+          <p class="text-xl font-medium sr-text pb-8">
+            Web Developer || IT Networking
+          </p>
+          <hr class="w-[60px]" />
+          <p class="text-xl font-regular sr-text text-justify leading-7 pb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem
+            deserunt porro ipsa pariatur doloribus at tenetur quibusdam nulla
+            eum ratione, quas dolorum, sapiente possimus maiores aut saepe nisi
+            nesciunt atque in illum tempora. Soluta molestiae cupiditate
+            explicabo sit dolorem, ad, minima illum optio dolor nobis hic ipsam
+            dignissimos consequuntur vero perspiciatis cumque molestias eligendi
+            corrupti. Ab recusandae debitis blanditiis.
+          </p>
+          <div class="flex flex-col lg:flex-row md:gap-8 gap-y-2">
+            <button class="w-full lg:w-4/12 bg-pr-color px-8 py-3 hover:bg-white hover:cursor-pointer transition-all duration-300 ease-in-out hover:text-[#7456ff]">
+              <a class="font-medium" href="#"><i class="fa-solid fa-file"></i> Download CV</a>
+            </button>
+            <button class="w-full lg:w-4/12 outline outline-1 px-8 py-3 hover:text-[#7456ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <a class="font-medium" href="https://github.com/mhmadrizallll" target="_blank">More</a>
+            </button>
+          </div>
+        </div>
+        <div class="w-full md:w-6/12 flex items-center justify-center">
+          <img src="img/porto.png" alt="aku" />
+        </div>
+      </div>
+      <div
+        class="container mx-auto flex items-center justify-center md:justify-end gap-5 py-6 px-8"
+      >
+        <p class="hidden md:block">Find Me On</p>
+        <div
+          class="w-8 h-8 flex items-center justify-center outline outline-1 rounded-full pr-color hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <a href="https://web.facebook.com/profile.php?id=100004470825117" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div
+          class="w-8 h-8 flex items-center justify-center outline outline-1 rounded-full pr-color hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <a href="https://www.instagram.com/mhmadrizallll/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div
+          class="w-8 h-8 flex items-center justify-center outline outline-1 rounded-full pr-color hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <a href="https://wa.me/6285640199864" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div
+          class="w-8 h-8 flex items-center justify-center outline outline-1 rounded-full pr-color hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <a href="https://www.linkedin.com/in/muhammad-rizal-b8784717a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- end sec main -->
+    <section id="What-do" class="py-12">
+      <div class="container mx-auto text-center space-y-14">
+        <h6 class="text-xl font-medium sr-text">What Do I Offer</h6>
+        <h1 class="font-semibold text-4xl leading-10 md:w-6/12 mx-auto w-11/12">
+          Creates Professional Design That’s Oriented Towards Client Needs
+        </h1>
+        <div class="owl-carousel owl-theme md:mx-4">
+          <div
+            class="item outline outline-1 pr-color my-4 container mx-auto"
+            
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img src="img/item1.png" alt="" style="width: 200px" />
+              <h4 class="text-[28px] font-semibold">Mobile App Design</h4>
+            </div>
+          </div>
+          <div
+            class="item outline outline-1 pr-color my-4 container mx-auto"
+            
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img src="img/item2.png" alt="" style="width: 200px" />
+              <h4 class="text-[28px] font-semibold">IT Networking</h4>
+            </div>
+          </div>
+          <div
+            class="item outline outline-1 pr-color my-4 container mx-auto"
+            
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img src="img/item3.png" alt="" style="width: 200px" />
+              <h4 class="text-[28px] font-semibold">
+                Learning Microsoft Office
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-3 pt-4">
+        <div
+          class="arrow-left outline outline-1 pr-color rounded-full h-8 w-8 flex justify-center items-center hover:cursor-pointer hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div
+          class="arrow-right outline outline-1 pr-color rounded-full h-8 w-8 flex justify-center items-center hover:cursor-pointer hover:bg-slate-800 hover:text-white cursor-pointer transition-all duration-300 ease-in-out"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+    <!-- end sec What-do -->
+    <section id="rating" class="py-12 bg-[#131313]">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-center md:gap-5"
+      >
+        <div class="w-full md:w-3/12 p-4 md:py-8">
+          <div
+            class="border-dashed border-2 py-16 flex flex-col items-center gap-2"
+          >
+            <h1 class="text-5xl font-semibold">05</h1>
+            <p class="text-base font-regular">Project Create</p>
+          </div>
+        </div>
+        <div class="w-full md:w-3/12 p-4 md:py-8">
+          <div class="py-16 flex flex-col items-center gap-2 bg-pr-color">
+            <h1 class="text-5xl font-semibold">03</h1>
+            <p class="text-base font-regular">Completed Project</p>
+          </div>
+        </div>
+        <div class="w-full md:w-3/12 p-4 md:py-8">
+          <div
+            class="border-dashed border-2 py-16 flex flex-col items-center gap-2"
+          >
+            <h1 class="text-5xl font-semibold">4.8</h1>
+            <p class="text-base font-regular">Stars Rating</p>
+          </div>
+        </div>
+        <div class="w-full md:w-3/12 p-4 md:py-8">
+          <div
+            class="border-dashed border-2 py-16 flex flex-col items-center gap-2"
+          >
+            <h1 class="text-5xl font-semibold">08</h1>
+            <p class="text-base font-regular">Month Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sec rating -->
+    <section id="projects" class="py-12">
+      <div class="container mx-auto space-y-8">
+        <h2 class="text-4xl text-center font-semibold pb-12">Latest Project</h2>
+        <div class="w-full flex flex-row items-center justify-center tr-color p-8">
+          <div class="md:w-4/12 hidden md:block">
+            <img src="img/project1.png" alt="project1" class="rounded-lg">
+          </div>
+          <div class="w-8/12 md:w-5/12 text-start px-12">
+            <h3 class="text-[32px] font-semibold"><span class="pr-color">Binar</span> Rent Car</h3>
+          </div>
+          <div class="w-4/12 md:w-3/12 text-end">
+            <button class="bg-pr-color px-8 py-3 hover:bg-white hover:text-[#7456ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <a class="font-medium" href="https://github.com/mhmadrizallll/FSW24001143-synrgy7-riz-bcr-ch4" target="_blank">View Detail</a>
+            </button>
+          </div>          
+        </div>
+        <div class="w-full flex flex-row items-center justify-center tr-color p-8">
+          <div class="md:w-4/12 hidden md:block">
+            <img src="img/project2.png" alt="project2" class="rounded-lg">
+          </div>
+          <div class="w-8/12 md:w-5/12 text-start px-12">
+            <h3 class="text-[32px] font-semibold">CRUD from <span class="pr-color">ExpressJS</span></h3>
+          </div>
+          <div class="w-4/12 md:w-3/12 text-end">
+            <button class="bg-pr-color px-8 py-3 hover:bg-white hover:text-[#7456ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <a class="font-medium" href="https://github.com/mhmadrizallll/CRUD-ExpressJS" target="_blank">View Detail</a>
+            </button>
+          </div>          
+        </div>        
+        <div class="w-full flex flex-row items-center justify-center tr-color p-8">
+          <div class="md:w-4/12 hidden md:block">
+            <img src="img/project3.png" alt="project3" class="rounded-lg">
+          </div>
+          <div class="w-8/12 md:w-5/12 text-start px-12">
+            <h3 class="text-[32px] font-semibold">Slicing other <span class="pr-color">Design</span></h3>
+          </div>
+          <div class="w-4/12 md:w-3/12 text-end">
+            <button class="bg-pr-color px-8 py-3 hover:bg-white hover:text-[#7456ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <a class="font-medium" href="https://github.com/mhmadrizallll/book_rent_laravel" target="_blank">View Detail</a>
+            </button>
+          </div>          
+        </div>
+
+        <div class="w-full tr-color flex flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-6/12 p-8 lg:space-y-2">
+            <h3 class="text-[32px] text-center md:text-start font-semibold">Have any project in mind?</h3>
+            <p class="text-base font-regular text-center md:text-start sr-text">I’m available for freelancing</p>
+          </div>
+          <div class="w-full lg:w-6/12 p-8 text-end space-y-2 md:space-y-0">
+            <button class="w-full lg:w-4/12 outline outline-1 px-8 py-3 hover:text-[#7456ff] hover:cursor-pointer transition-all duration-300 ease-in-out">
+              <a class="font-medium" href="https://github.com/mhmadrizallll" target="_blank">More Project</a>
+            </button>
+            <button class="w-full lg:w-4/12 bg-pr-color px-8 py-3 hover:bg-white hover:cursor-pointer transition-all duration-300 ease-in-out hover:text-[#7456ff]">
+              <a class="font-medium" href="mailto:muhammadrizal087733521@gmail"><i class="fa-solid fa-envelope"></i> Email Me</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end projects -->
+    <section id="why" class="py-12">
+      <div class="container mx-auto">
+        <h2 class="text-center text-4xl font-semibold py-12">Why Hire Me</h2>        
+        <div class="flex flex-col md:flex-row items-center">        
+          <div class="w-full md:w-3/12 flex flex-col items-center gap-5 p-6 transition-all duration-500 ease-in-out hover:cursor-pointer hover:scale-110">
+            <div class="w-[250px] h-[250px] rounded-full outline outline-1 text-white/20 flex items-center justify-center">
+              <i class="fa-solid fa-suitcase text-6xl rounded-full outline outline-1 pr-color w-[200px] h-[200px] flex items-center justify-center"></i>
+            </div>
+            <h4 class="text-[28px] font-medium pt-16">Workaholic</h4>
+            <p class="text-base font-regular sr-text text-justify">
+              I’m a kind of person who can’t just stand around and doing nothing. I have a tendency to do something productive.
+            </p>
+          </div>
+          <div class="w-full md:w-3/12 flex flex-col items-center gap-5 p-6 transition-all duration-500 ease-in-out hover:cursor-pointer hover:scale-110">
+            <div class="w-[250px] h-[250px] rounded-full outline outline-1 text-white/20 flex items-center justify-center">
+              <i class="fa-solid fa-people-group text-6xl rounded-full outline outline-1 pr-color w-[200px] h-[200px] flex items-center justify-center"></i>
+            </div>
+            <h4 class="text-[28px] font-medium pt-16">Communicative</h4>
+            <p class="text-base font-regular sr-text text-justify">
+              I have a broad understanding of verbal vocabulary. Therefore, I can convey a message well to the receiver.
+            </p>
+          </div>
+          <div class="w-full md:w-3/12 flex flex-col items-center gap-5 p-6 transition-all duration-500 ease-in-out hover:cursor-pointer hover:scale-110">
+            <div class="w-[250px] h-[250px] rounded-full outline outline-1 text-white/20 flex items-center justify-center">
+              <i class="fa-solid fa-thumbs-up text-6xl rounded-full outline outline-1 pr-color w-[200px] h-[200px] flex items-center justify-center"></i>
+            </div>
+            <h4 class="text-[28px] font-medium pt-16">Cooperative</h4>
+            <p class="text-base font-regular sr-text text-justify">
+              Behind the successful project, there’s a great team. I can build a good cooperation and remain consistent with the goal.
+            </p>
+          </div>
+          <div class="w-full md:w-3/12 flex flex-col items-center gap-5 p-6 transition-all duration-500 ease-in-out hover:cursor-pointer hover:scale-110">
+            <div class="w-[250px] h-[250px] rounded-full outline outline-1 text-white/20 flex items-center justify-center">
+              <i class="fa-solid fa-person-circle-check text-6xl rounded-full outline outline-1 pr-color w-[200px] h-[200px] flex items-center justify-center"></i>
+            </div>
+            <h4 class="text-[28px] font-medium pt-16">Perfectionist</h4>
+            <p class="text-base font-regular sr-text text-justify">
+              I have a strong intuition. I have remained consistent with high quality standards to present a most worthy result.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end why -->
+    <section id="tools" class="py-12">
+      <div class="container mx-auto">
+        <h2 class="text-center text-4xl font-semibold py-12 pb-20">Tools and Skills</h2>
+        <div class="w-full flex flex-row items-center justify-center flex-wrap">
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-js text-6xl"></i>
+            </div>
+          </div>
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-react text-6xl"></i>
+            </div>
+          </div>
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-php text-6xl"></i>
+            </div>
+          </div>
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-laravel text-6xl"></i>
+            </div>
+          </div>
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-css3 text-6xl"></i>
+            </div>
+          </div>
+          <div class="w-6/12 md:w-2/12 flex items-center justify-center hover:cursor-pointer pr-color hover:text-white">
+            <div class="w-[200px] h-[200px] flex justify-center items-center">
+              <i class="fa-brands fa-bootstrap text-6xl"></i>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end tools -->
+    <section id="footer" class="py-12">
+      <div class="container mx-auto space-y-8 p-8 md:p-0">
+        <h2 class="text-4xl font-semibold">Get in Touch</h2>
+        <p class="text-base font-regular sr-text">For business and partnership inquiry please contact me below!</p>
+        <div class="w-full flex flex-row items-center">
+          <div class="w-9/12 flex flex-col">
+            <div class="w-full flex justify-start items-center">
+              <div class="w-4/12 hidden md:block md:w-1/12">
+                <div class="w-[60px] h-[60px] flex justify-center items-center ">
+                  <i class="fa-solid fa-phone text-2xl"></i>
+                </div>
+              </div>
+              <div class="w-10/12 md:w-11/12">
+                <p class="text-base font-regular sr-text">Phone</p>
+                <p class="text-base font-regular">0856-4019-9864</p>
+              </div>
+            </div>
+            <div class="w-full flex justify-start items-center">
+              <div class="w-4/12 hidden md:block md:w-1/12">
+                <div class="w-[60px] h-[60px] flex justify-center items-center ">
+                  <i class="fa-solid fa-envelope text-2xl"></i>
+                </div>
+              </div>
+              <div class="w-8/12 md:w-11/12">
+                <p class="text-base font-regular sr-text">E-mail</p>
+                <a href="mailto:muhammadrizal087733521@gmail" class="text-base font-regular underline hover:text-[#7456ff]">muhammadrizal087733521@gmail.com</a>
+              </div>
+            </div>
+            <div class="w-full flex justify-start items-center">
+              <div class="w-4/12 hidden md:block md:w-1/12">
+                <div class="w-[60px] h-[60px] flex justify-center items-center ">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </div>
+              </div>
+              <div class="w-8/12 md:w-11/12">
+                <p class="text-base font-regular sr-text">Github</p>
+                <a href="https://github.com/mhmadrizallll" target="_blank" class="text-base font-regular hover:text-[#7456ff]">mhmadrizallll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          center: true,
+          dots: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+          },
+        });
+
+        $(".arrow-left").on("click", function () {
+          $(".owl-carousel").trigger("prev.owl.carousel");
+        });
+
+        $(".arrow-right").on("click", function () {
+          $(".owl-carousel").trigger("next.owl.carousel");
+        });
+      });
+    </script>
+  </body>
+</html>
